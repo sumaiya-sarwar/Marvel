@@ -6,17 +6,23 @@ import Character from './components/Character';
 import Home from './pages/Home';
 import Characters from './pages/charactersList';
 import CharacterPage from './pages/charactersPage';
+import HomeSlider from './components/HomeSlider';
+import Navbar from './components/Navbar';
+import NavComponent from './components/Navbar';
+
+
 
 function App() {
   return (
     <div>
      
       <Header/>
-      <Characters />
+      <NavComponent />
+      <HomeSlider />
         <Routes >
-          <Route path = "/" element={<Home/>} />
-          <Route index element='/:idx' element={<Character/>} />
-      
+          {/* <Route path = "/" element={<Home/>} /> */}
+          <Route index element={<Home/>} />
+          <Route path = "/:charId" element={<Character/>} />
         </Routes>
       
     </div>

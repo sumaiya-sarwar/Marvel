@@ -1,0 +1,11 @@
+.title {
+  color: white;
+  background-color: rgb(236, 29, 36);
+  box-sizing: border-box;
+  
+  text-decoration: none;
+  text-align: center;
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}

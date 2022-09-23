@@ -1,15 +1,13 @@
+import '../App.css';
 import { Link } from "react-router-dom";
 
 function Header() {
     return(
         <nav>
         <Link to='/'>
-            <h1>Marvel</h1>
+            <h1 className='title'>Marvel</h1>
         </Link>
-        <Link to=''>
-            <div>Log In</div>
-        </Link>
-        
+      
         </nav>
     )
 }
