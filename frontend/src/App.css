@@ -1,11 +1,30 @@
 .title {
   color: white;
-  background-color: rgb(236, 29, 36);
-  box-sizing: border-box;
-  
-  text-decoration: none;
+  background-color: #191616;
   text-align: center;
-  font-size: 50px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin:0;
+ 
+}
+
+.navbar {
+  background-color: #ffffff;
   
 }
+.nav-item {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.grid{
+  margin: 0px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap: 50px 50px;
+  border-style: none;
+ }
+
+ .card-name {
+   text-align: center;
+   font-weight: bold;
+ }

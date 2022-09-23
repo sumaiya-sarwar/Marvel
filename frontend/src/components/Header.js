@@ -1,14 +1,12 @@
 import '../App.css';
 import { Link } from "react-router-dom";
 
+
 function Header() {
     return(
-        <nav>
-        <Link to='/'>
-            <h1 className='title'>Marvel</h1>
-        </Link>
-      
-        </nav>
+        <Link to='/' style={{ textDecoration: 'none' }}>
+            <h1 className='title'><img src="./marvel.PNG" width="200px" /></h1>
+        </Link>    
     )
 }
 

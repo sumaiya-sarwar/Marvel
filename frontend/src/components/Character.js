@@ -26,10 +26,10 @@ function Character() {
             {/* Note: The image loads the first time but then if you try to reload or open link for another character, nothing shows 
             because the character.thumbnail.path below gives error. The error is : "Uncaught TypeError: Cannot read properties of undefined (reading 'path')".
             This means that after an image loads the first time, second time when reloaded, the path property where the url is becomes undefined causing the issue. */}
-            <img src= {String(character.thumbnail.path) + ".jpg"} alt={character.name} width="200" height="200"/>
+            {/* <img src= {String(character.thumbnail.path) + ".jpg"} alt={character.name} width="200" height="200"/> */}
             <h3> Name: {character.name}</h3>
             <h3> Id: {charId} </h3>
-            <h3> Description: </h3> 
+            <h3> Description: <span>{character.description}</span></h3> 
             <p> {character.description} </p>
         </div>
     )

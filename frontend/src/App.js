@@ -12,18 +12,19 @@ import NavComponent from './components/Navbar';
 
 
 
+
 function App() {
   return (
     <div>
      
       <Header/>
       <NavComponent />
-      <HomeSlider />
+
         <Routes >
-          {/* <Route path = "/" element={<Home/>} /> */}
           <Route index element={<Home/>} />
           <Route path = "/:charId" element={<Character/>} />
         </Routes>
+        
       
     </div>
   );
