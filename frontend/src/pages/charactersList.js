@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from "react";
-import Characters from "./charactersPage"
 import '../App.css';
 import {Card}from 'react-bootstrap';
 

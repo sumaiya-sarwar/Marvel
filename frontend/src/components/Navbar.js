@@ -1,26 +1,20 @@
-import React from 'react';
-import '../App.css'
-import {Navbar, Container, Form, Button} from 'react-bootstrap';
+
+import {Navbar, Container} from 'react-bootstrap';
+import SearchForm from './SearchForm';
 
 const NavComponent = () => {
+
+
     return (
-        <Navbar className="navbar">
+        <Navbar>
         <Container>
-          <Navbar.Brand className="nav-item" href='/'>Character List</Navbar.Brand>
+          <Navbar.Brand href='/'>Character List</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success" style={{marginRight: '15px'}}>Search</Button>
             <Navbar.Text>
-              <a className="nav-item" href='/'>SignUp/Login</a>
+              <a href='/'>Sign Up / Login</a>
             </Navbar.Text>
-          </Form>
+                <SearchForm/>
           </Navbar.Collapse>
         </Container>
       </Navbar>

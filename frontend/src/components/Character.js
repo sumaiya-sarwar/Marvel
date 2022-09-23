@@ -15,7 +15,7 @@ function Character() {
             setCharacter(json.data.results[0]) // the results array has only one element which is an object containing the info on the character
         })
         .catch(console.error)
-    }, []);
+    }, [url]);
     console.log(character)
     console.log(character.name)
 
@@ -26,11 +26,11 @@ function Character() {
             {/* Note: The image loads the first time but then if you try to reload or open link for another character, nothing shows 
             because the character.thumbnail.path below gives error. The error is : "Uncaught TypeError: Cannot read properties of undefined (reading 'path')".
             This means that after an image loads the first time, second time when reloaded, the path property where the url is becomes undefined causing the issue. */}
-            {/* <img src= {String(character.thumbnail.path) + ".jpg"} alt={character.name} width="200" height="200"/> */}
+            <img src= {`${character.thumbnail?.path}.${character.thumbnail?.extension}`} alt={character.name} width="200" height="200"/>
             <h3> Name: {character.name}</h3>
             <h3> Id: {charId} </h3>
-            <h3> Description: <span>{character.description}</span></h3> 
-            <p> {character.description} </p>
+            <h3> Description: <span classsName="description">{character.description ? character.description : "No description Available." }</span></h3> 
+           
         </div>
     )
 }
